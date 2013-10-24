@@ -1,5 +1,10 @@
 gimp-android-xdpi
 =================
+Update
+======
+Forked from https://github.com/ncornette/gimp-android-xdpi
+I hacked this GIMP python script and added support for xxhdpi. I think it works :-) 
+https://github.com/gywst/gimp-android-xdpi
 
 Gimp plugin to export images or icons for all android densities. Just select the area to export, then run the plugin
 from Filters/Android/Write Android XDPIs... Images will be written to your drawable-ldpi / mdpi / hdpi / xhdpi folders.
