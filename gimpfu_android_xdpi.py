@@ -11,7 +11,14 @@ Updated:
 	http://github.com/gywst
 	- added support for xxhdpi 
 	- see http://developer.android.com/design/style/iconography.html
-	
+
+Updated: 
+	Thomas Koch (Skywave) 2013/12/28
+	http://github.com/skywave
+	- added support for xxxhdpi 
+	- see http://developer.android.com/design/style/iconography.html
+
+
 Actions: 
     - Save Visible Selection to android drawables into 
         - res/drawable-ldpi 
@@ -19,7 +26,8 @@ Actions:
         - res/drawable-hdpi 
         - res/drawable-xhdpi
         - res/drawable-xxhdpi 
-		
+        - res/drawable-xxxhdpi 
+        
     - You can select a new width for the drawable and select the target density.
     - Drawables for other densities will be scaled accordingly
 
@@ -43,7 +51,8 @@ dpi_ratios = (('drawable-ldpi',0.75),
               ('drawable-mdpi',1),
               ('drawable-hdpi',1.5),
               ('drawable-xhdpi',2),
-              ('drawable-xxhdpi',3))
+              ('drawable-xxhdpi',3)
+              ('drawable-xxxhdpi',4))
 
 
 
@@ -116,7 +125,7 @@ gimpfu.register("python_fu_android_xdpi",
                     (gimpfu.PF_DIRNAME, "res-folder",     "Project res Folder", DEFAULT_OUTPUT_DIR), #os.getcwd()),
                     (gimpfu.PF_STRING, "image-basename", "Image Base Name", 'icon'),
                     (gimpfu.PF_INT, "target-width", "Target Width", 48),
-                    (gimpfu.PF_RADIO, "target-dpi", "Base Density", DEFAULT_OUTPUT_DPI, (("ldpi", "drawable-ldpi"), ("mdpi", "drawable-mdpi"), ("hdpi", "drawable-hdpi"), ("xhdpi", "drawable-xhdpi"), ("xxhdpi", "drawable-xxhdpi"))),
+                    (gimpfu.PF_RADIO, "target-dpi", "Base Density", DEFAULT_OUTPUT_DPI, (("ldpi", "drawable-ldpi"), ("mdpi", "drawable-mdpi"), ("hdpi", "drawable-hdpi"), ("xhdpi", "drawable-xhdpi"), ("xxhdpi", "drawable-xxhdpi"),("xxxhdpi", "drawable-xxxhdpi"))),
                     (gimpfu.PF_RADIO, "image-extension", "Image Format", DEFAULT_OUTPUT_EXT, (("gif", "gif"), ("png", "png"), ("jpg", "jpg"))),
                       ], 
                 [], 
